@@ -1,0 +1,985 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+
+
+.nav .menu__list-link, .nav {
+    text-decoration: none;
+    color:#fff;
+    font-size: 13px;
+}
+
+.category-nav-link{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 13px;
+}
+
+.nav .menu__list-link:hover, .category-nav-link:hover{
+    text-decoration: underline;
+}
+
+.nav{
+    list-style-type: none;
+    padding: 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+/*Header*/
+
+.header{
+    border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 25%);
+    margin-bottom: 50px;
+    background-color: rgb(34, 50, 11);
+    color: #fff;
+}
+
+
+.logo__img{
+    
+    float: left;
+    width: 50%;
+            
+}
+
+.header__top{
+    justify-content: left;
+    align-items:center;
+    white-space: nowrap;
+}
+
+.header__top-right{
+    justify-content: right;
+    width: 20%;
+}
+
+.header__item{
+    display: flex;
+    margin-top: 20px;
+}
+
+.mobile__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button{
+    font-size: 12px;
+    line-height: 6px;
+    color: rgb(34, 50, 11);
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+.button:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(34, 50, 11);
+}
+
+.menu__list{
+    display: flex;
+}
+
+.menu__list-link{
+    margin: 0 20px;
+}
+
+.menu__list-item:first-child .menu__list-link{
+    justify-content: right;
+    margin-left: auto;
+    margin-right: 0;
+    color: #fff;
+}
+
+.ham, .white-ham{  
+    display:none;  
+    padding:5px;  
+    cursor:pointer;  
+}  
+   
+.bar1,.bar2,.bar3{  
+    display:block;  
+    width:35px;  
+    height:3px;  
+    margin:5px auto;  
+    background-color:#101010;  
+    transition: 0.4s;  
+}
+
+.white-bar1, .white-bar2, .white-bar3{
+    display:block;  
+    width:30px;  
+    height:3px;  
+    margin:5px auto;  
+    background-color:#fff;  
+}
+
+.header__bottom{
+    justify-content: end;
+    margin-bottom: 30px;
+}
+
+
+
+/*Block of categories*/
+
+.block__category{
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.block__category-header{
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.block__category-header .white-ham{
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.block__category-title{
+    margin: 5px;
+    
+}
+
+.category-nav{
+    text-align: center;
+}
+
+.category-nav-item{
+    padding: 10px 0;
+}
+
+/*Main content*/
+
+.swiper{
+    height: 300px;
+}
+
+.right__block{
+    width: 100%;
+    margin-left: 50px;
+}
+
+
+.swiper-pagination-bullet-active{
+    background: #fff !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 28px;
+    border-radius: 100%;
+}
+
+.atricle__form{
+    margin-top: 50px;
+    align-items: center;
+}
+
+.article__title{
+    font-size: 18px;
+}
+
+/*Footer*/
+
+.footer{
+    background-color: rgb(34, 50, 11);
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+.footer .menu__list{
+    justify-content: center;
+}
+
+.footer__head{
+    color: white;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.37);
+    padding: 10px;
+}
+
+.social-icon{
+    height: 25px;
+    padding: 0 5px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    
+}
+
+.footer__icon{
+    
+    text-decoration: none;
+}
+
+.footer__text{
+    font-size: 12px;
+}
+
+/*Catalog*/
+
+.catalog__item{
+    position: relative;
+    width: 45%;
+    height: 236px;
+}
+
+.catalog__item:hover .overlay{
+    height: 100%;
+}
+
+.catalog__item:hover .catalog__item-bottom{
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    color: #fff;
+    text-align: center;
+}
+
+.catalog__item-bottom{
+    position: absolute;
+    background-color: #000;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+}
+
+.catalog__img{
+    width: 100%;
+    height: 100%;
+}
+
+.catalog__item-text{
+    margin: 0;
+    font-size: 14px;
+}
+
+.catalog__item-title{
+    margin-bottom: 40px;
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+.catalog .row{
+    margin: 50px 0;
+    display: flex;
+}
+
+@media only screen and (max-width:800px){
+
+    
+    .header__top-right{
+        width: auto;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .mobile__menu .menu__list{
+        display: block;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .mobile__menu .nav .menu__list-link{
+        margin: 0;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .mobile__menu{  
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 200px;
+        position: fixed;
+        top: 200px;
+        right: -100%;
+        transition: 0.5s;
+        margin: 0 auto;
+        z-index: 10;
+        background-color: #101010;
+    }  
+
+    .nav-change{  
+        right: 0;
+        z-index: 100;
+        transition: 0.2s ease;  
+    }  
+
+    .catalog .block__category-body{
+        display: none;
+    }
+
+    .hidden{
+        overflow: hidden;
+    }
+
+    .ham, .white-ham{  
+        display:block;  
+    }  
+
+    .change .bar1{  
+        transform: rotate(45deg) translate(8px,3px);  
+    }  
+
+    .change .bar2{  
+        opacity: 0;  
+    }  
+
+    .change .bar3{  
+        transform: rotate(-45deg) translate(8px,-3px);  
+    }  
+
+    .article__text{
+        width: 100%;
+    }
+
+    .right__block {
+        width: auto;
+        margin: 40px;
+        text-align: center;
+    }
+
+    .article__img {
+        width: 90%;
+    }
+
+    .mobile__menu .menu__list-item{
+        margin: 30px;
+        color: #fff;
+    }
+
+    .button{
+        font-size: 16px;
+    }
+
+    .mobile__none{
+        display: none;
+    }
+
+    .catalog .block__category-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    
+
+    
+}  
+
+
+@media only screen and (min-width:1000px){
+    .container1{
+        max-width: 1220px;
+        margin-left: auto;
+        margin-right: auto; 
+        padding: 0 10px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+}
+/* контейнер для карток - цінностей*/
+
+
+@media only screen and (max-width:500px){
+    
+
+    .swiper-button-next, .swiper-button-prev{
+        display: none !important;
+    }
+
+    .swiper {
+        height: auto;
+    }
+
+    .catalog__item{
+        width: 100%;
+        height: 170px;
+        margin: 50px 0;
+    }
+
+    .catalog__item-bottom{
+        padding: 8px;
+    }
+
+    .catalog__item-title{
+        margin-top: 30px;
+    }
+
+    .catalog .row {
+        margin: 0;
+        display: block;
+    }
+
+    .backdown{
+        margin-left: none;
+    }
+
+   
+    
+}
+
+
+/*recipe*/
+.recipe__form{
+    margin-top: 50px;
+    align-items: center;
+}
+
+.recipe__img{
+    width: 50%;
+    position: relative;
+    
+}
+.recipe__ingredients__title{
+    width: 90%;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 5%;    
+}
+.recipe__ingredients__text{
+    width: 90%;
+    text-align: left;
+    
+    font-size: small;
+}
+
+.recipe__title{
+    font-size: 18px;
+}
+
+/*arrow up*/
+
+#toTop {
+    width:100px;
+    position:fixed;
+    bottom:10px; 
+    right:10px;
+    cursor:pointer;
+    display:none;
+}
+
+.up__icon{
+    height: 45px;
+}
+
+#more {display: none;}
+
+#btn__more{
+    font-size: 12px;
+    line-height: 6px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+#btn__more:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+
+
+
+
+  .main__photo{
+    height: 100%;
+ 
+  }
+
+
+
+.article{
+    position: relative;
+    text-align: center;
+    color: white;
+    
+    font-size: 50px;
+}
+/* Стилі для тексту */
+    .text-block {
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+   
+    
+}
+
+
+.container{
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 0 10px;
+    
+    
+}
+
+
+
+/*налаштування стилю для карток - цінності і відгуки*/
+.container .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background:  rgb(113, 189, 0); 
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+    
+}
+
+.container .card .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
+
+/*налаштування до hover-ефектів на картинках*/
+.column {
+    margin: 15px 15px 0;
+    padding: 0;
+  }
+  .column:last-child {
+    padding-bottom: 60px;
+  }
+  .column::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  .column div {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 0 0 0 25px;
+    padding: 0;
+  }
+  .column div:first-child {
+    margin-left: 0;
+  }
+  .column div span {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 0;
+  }
+  
+  figure:hover+span {
+    text-align: left;
+    bottom: -36px;
+    opacity: 1;
+  }
+
+
+/*hover для головного фото - чорно білий ефект*/
+.hover08 figure img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 0.6;
+}
+.hover08 figure:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/*hover для  фото статті - збільшення зображення*/
+  .hover02 figure img {
+    width: 80%;
+    height: auto;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .hover02 figure:hover img {
+    width: 90%;
+  }
+
+/*hover  для тексту статті - тінь+зміна кольру*/
+  .article__text{
+    width: 60%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+    -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+
+
+
+  
+/*налаштування стилю заголовку Про нас*/
+.about_us{
+    text-align: left; 
+    font-size: 20px;
+    
+}
+
+
+
+
+/* налаштування стилів до розділу контакти*/
+.textcols {
+	column-width: 50%;
+	column-count: 2;
+	column-gap: 10%;
+    
+	
+}
+
+.left__column{
+    text-align: center;
+    
+    border-right: 2px solid rgb(34, 50, 11);
+    
+}
+
+.right__column{
+    text-align: left;  
+}
+
+.icon-contact{
+    margin-left: 40%;
+}
+
+
+.round{
+    border-radius: 50%
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+
+  /*hover ефект ліній зверху та знизу текста для заголовків категорій послуг*/
+
+h3.title-underline{
+    font-size: 1em; 
+    color: #5a5a5a; 
+    text-align: center; 
+}
+
+h3.title-underline:before {
+    content: '';
+    display: block;
+    height: 1px; 
+    background: rgb(34, 50, 11); 
+    width: 336px; 
+    margin: 0 auto 10px; 
+	transition: 1s; 
+}
+h3.title-underline:hover:before {
+    width: 383px; 
+	transition: ease-out 1s;
+}
+
+h3.title-underline:after {
+    content: '';
+    display: block;
+    height: 1px; 
+    background: rgb(34, 50, 11); 
+    width: 336px; 
+    margin: 10px auto 0; 
+	transition: 1s; 
+}
+h3.title-underline:hover:after {
+    width: 383px; 
+	transition: ease-out 1s; 
+}
+     
+
+/*кнопка додавання товару до замовлення*/
+label {
+    font-size: 20px;
+    
+    margin: 0 0.25em;
+    font-family: sans-serif;
+    position: relative;
+    cursor: pointer;
+  }
+
+  label::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+   
+    top: 50%;
+    left: 0;
+    transition: all 250ms linear;
+  }
+
+  input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    background: transparent;
+    outline: none;
+    border-radius: 15%;
+    transition: all 150ms linear;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(16, 200, 65);
+    font-size: 0;
+    font-weight: 700;
+    transition: all 250ms linear;
+  }
+
+  input[type="checkbox"]:checked:before {
+    font-size: 36px;
+  }
+
+  input[type="checkbox"]:checked {
+    border: none;
+  }
+
+  input[type="checkbox"]:checked ~ label::before {
+    width: 100%;
+  }
+
+  
+  
+
+
+  .image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-top: 10px;
+    
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+
+.left__block{
+    position:fixed;
+}
+
+.backdown{
+    margin-left: 330px;
+}
+
+
+/*Кошторис*/
+.hidden{
+    display: none;   
+}

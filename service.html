@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasini gi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="icon" href="img/favikon.png" type="image/png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <header class="header"> 
+        <div class="container">
+            <div class="header__top header__item">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="img/logo.png" alt="logo_piece of cake">
+                </a>
+                <div class="header__top-right">
+                    <nav class="menu">
+                        <div class="ham" >  
+                            <span class="bar1"></span>  
+                            <span class="bar2"></span>  
+                            <span class="bar3"></span>  
+                        </div>  
+                        <div class="mobile__menu">
+                            <ul class="menu__list nav">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="index.html">Головна</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="service.html">Послуги</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="index.html">Про нас</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="index.html">Портфоліо</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="index.html">Відгуки</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="index.html">Контакти</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    
+	
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="left__block  mobile__none">
+                    <section class="block__category catalog">
+                        <div class="block__category-header">
+                            <p class="block__category-title">Категорії</p>
+                            <div class="white-ham">  
+                                <span class="white-bar1"></span>  
+                                <span class="white-bar2"></span>  
+                                <span class="white-bar3"></span>  
+                            </div>  
+                        </div>
+                        <div class="block__category-body">
+                            <ul class="category-nav nav">
+                                
+                                    <li class="category-nav-item">
+                                        <a class="category-nav-link" href="#first-type">Прибудинкова ділянка (приватний сектор)</a>
+                                    </li>
+                                    <li class="category-nav-item">
+                                        <a class="category-nav-link" href="#second-type">Прибудинкова ділянка (ЖК)
+                                        </a>
+                                    </li>
+                                    <li class="category-nav-item">
+                                        <a class="category-nav-link" href="#third-type">Квартира</a>
+                                    </li>
+                                
+                                
+                                
+                            </ul>
+                        </div>
+                    </section>
+                    
+                </div>
+                <div class="right__block backdown">
+                    <section class="main__content">
+                        
+
+                        <h2>Наші послуги:</h2>
+                        <a name="first-type"></a>
+                        <h3 class="title-underline">Прибудинкова ділянка (приватний сектор)</h3>
+                        
+                        
+                        <form action = "check.php" method = "post">
+                        
+                        <ul><h4>Дренажна та зрошувальна системи</h4>
+                            <li>Облаштування декоративного ставка з підсвічуванням.</li>
+                            <li>Установка каркасних басейнів.</li>
+                            <li>Будівництво зон відпочинку з альтанками, електричними печами барбекю.</li>
+                            <li>Створення фонтанів і водоспадів.</li>
+                            <li>Декорування саду рослинами, для яких необхідні іригаційні системи.</li>
+                          </ul>
+
+                          <p style="text-align:center">Введіть площу ділянки для підрахунку кошторису(м<sup>2</sup>): 
+
+                    
+                                <input type="number" id="input1" class = "form-control" name="drainage_syst" value="0">
+                          </p>
+                          <input type="checkbox" id="price1000" class = "form-control">
+                            
+                            
+                            <label >Додати послугу до замовлення</label>
+                          <div class="image-container">
+                            <img src="img/service1.jpg" alt="Snow" style="width:100%;">
+                            <div class="bottom-left">Ціна: 1000$/м<sup>2</sup></div> 
+                          </div> 
+                          
+
+
+                        
+                        <ul><h4>Огорожі і роздільники зон на ділянці</h4>
+                            <li>Кам'яні</li>
+                            <li>Цегляні</li>
+                            <li>Бетонні</li>
+                            <li>Металеві</li>
+                            <li>Дерев'яні</li>
+                          </ul>
+
+                          <p style="text-align:center">Введіть довжину паркану для підрахунку кошторису(м): <input type="number" id="input2" class = "form-control" name="fences" value="0"></p>
+                          <input type="checkbox" id="price450" class = "form-control">
+                            <label >Додати послугу до замовлення</label>
+                          <div class="image-container">
+                            <img src="img/service2.jpg" alt="Snow" style="width:100%;">
+                            <div class="bottom-left">Ціна: 450$/м</div> 
+                          </div> 
+                          
+
+
+
+                        
+                        <h4>Встановлення альтанок</h4>
+                        <p style="text-align:center">Введіть площу ділянки для підрахунку кошторису(м<sup>2</sup>): <input type="number" id="input3" class = "form-control" name="arbor" value="0"></p>
+                        <input type="checkbox" id="price2000" class = "form-control">
+                            <label >Додати послугу до замовлення</label>
+                        <div class="image-container">
+                            <img src="img/service4.jpeg" alt="Snow" style="width:100%;">
+                            <div class="bottom-left">Ціна: 2000$/м<sup>2</sup></div> 
+                          </div> 
+                          
+                        
+                        <a name="second-type"></a>
+                        <h3 class="title-underline">Прибудинкова ділянка (ЖК)</h3>
+                        
+
+                        <h4>Клумба безперервного цвітіння</h4>
+                        <p style="text-align:center">Введіть площу ділянки для підрахунку кошторису(м<sup>2</sup>): <input type="number" id="input4" class = "form-control" name="flowerbed" value="0"></p>
+                        <input type="checkbox" id="price500" class = "form-control">
+                            <label >Додати послугу до замовлення</label>
+                        <div class="image-container">
+                            <img src="img/service3.jpg" alt="Snow" style="width:100%;">
+                            <div class="bottom-left">Ціна: 500$/м<sup>2</sup></div> 
+                          </div> 
+                          
+
+
+
+
+
+                        <h4>Рулонний газон</h4>
+                        <p style="text-align:center">Введіть площу ділянки для підрахунку кошторису(м<sup>2</sup>): <input type="number" id="input5" class = "form-control" name="rolled_lawn" value="0"></p>
+                        <input type="checkbox" id="price150" class = "form-control">
+                            <label>Додати послугу до замовлення</label>
+                        <div class="image-container">
+                            <img src="img/service5.jpg" alt="Snow" style="width:100%;">
+                            <div class="bottom-left">Ціна: 150$/м<sup>2</sup></div> 
+                          </div> 
+
+
+                          
+                        <h4>Укладка бруківки</h4>
+                        <p style="text-align:center">Введіть площу ділянки для підрахунку кошторису(м<sup>2</sup>): <input type="number" id="input6" class = "form-control" name="paving" value="0"></p>
+                        <input type="checkbox" id="price300" class = "form-control">
+                        <label >Додати послугу до замовлення</label>
+
+                        <div class="image-container">
+                            <img src="img/service6.jpg" alt="Snow" style="width:100%;">
+                            <div class="bottom-left">Ціна: 300$/м<sup>2</sup></div> 
+                          </div> 
+                         
+
+
+                        <a name="third-type"></a>
+                        <h3 class="title-underline">Квартира</h3>
+                        <h4>Створення проекту "під ключ" озеленення квартир</h4>
+                        <p style="text-align:center">Введіть площу квартири для підрахунку кошторису(м<sup>2</sup>): <input type="number" id="input7" class = "form-control" name="apartment_landscaping" value="0"></p>
+                        <input type="checkbox" id="price400" class = "form-control">
+                            <label >Додати послугу до замовлення</label>
+                        
+
+                        <div class="image-container">
+                            <img src="img/service7.jpg" alt="Snow" style="width:100%;">
+                            <div class="bottom-left">Ціна: 400$/м<sup>2</sup></div> 
+                          </div> 
+
+
+                       
+                            
+                          
+                          
+
+                          <h2>Замовити послуги</h2>   
+                    
+                            
+                           
+                           
+                                <p><input id="email" required placeholder="email" name="email"></p>
+                                
+                                <button type="submit" id="btn__more" class="btn btn-success">Замовити</button>
+                               
+                    </form>            
+                            
+                    <h2>Загальний кошторис:</h2>
+                          
+                          <button onclick="  
+
+
+                          var total = 0;
+                         
+                          var totalitems = 'Список обраних послуг:\n';
+                          
+                          
+                          var chbox1,chbox2,chbox3,chbox4,chbox5,chbox6,chbox7;
+                        
+                          chbox1=document.getElementById('price1000');
+                          chbox2=document.getElementById('price450');
+                          chbox3=document.getElementById('price2000');
+                          chbox4=document.getElementById('price500');
+                          chbox5=document.getElementById('price150');
+                          chbox6=document.getElementById('price300');
+                          chbox7=document.getElementById('price400');
+                        
+                        
+                          var input1 = document.getElementById('input1').value;
+                          var input2 = document.getElementById('input2').value;
+                          var input3 = document.getElementById('input3').value;
+                          var input4 = document.getElementById('input4').value;
+                          var input5 = document.getElementById('input5').value;
+                          var input6 = document.getElementById('input6').value;
+                          var input7 = document.getElementById('input7').value;
+                          var show = document.getElementById('show');
+
+                          
+                          show.style.display = 'inline';
+                          var ul = document.getElementById('list');
+                        
+                         
+                        
+                          if(input1>0&&chbox1.checked&&input1<500000){
+                            total+=(1000*input1);
+                            var li1 = document.createElement('li');
+                            li1.appendChild(document.createTextNode('Дренажна та зрошувальна системи'));
+                            ul.appendChild(li1);
+                            
+                          }
+                        
+                          if(input2>0&&chbox2.checked&&input2<500000){
+                            total+=(450*input2);
+                            var li2 = document.createElement('li');
+                            li2.appendChild(document.createTextNode('Огорожі і роздільники зон на ділянці'));
+                            ul.appendChild(li2);
+                            
+                          }
+                        
+                          if(input3>0&&chbox3.checked&&input3<500000){
+                            total+=(2000*input3);
+                            var li3 = document.createElement('li');
+                            li3.appendChild(document.createTextNode('Встановлення альтанки'));
+                            ul.appendChild(li3);
+                            
+                          }
+                        
+                          if(input4>0&&chbox4.checked&&input4<500000){
+                            total+=(500*input4);
+                            var li4 = document.createElement('li');
+                            li4.appendChild(document.createTextNode('Клумба безперервного цвітіння'));
+                            ul.appendChild(li4);
+                            
+                          }
+                        
+                          if(input5>0&&chbox5.checked&&input5<500000){
+                            total+=(150*input5);
+                            var li5 = document.createElement('li');
+                            li5.appendChild(document.createTextNode('Рулонний газон'));
+                            ul.appendChild(li5);
+                            
+                          }
+                        
+                          if(input6>0&&chbox6.checked&&input6<500000){
+                            total+=(300*input6);
+                            var li6 = document.createElement('li');
+                            li6.appendChild(document.createTextNode('Укладка бруківки'));
+                            ul.appendChild(li6);
+                            
+                          }
+                        
+                          
+                          
+
+                          if(input7>0&&chbox7.checked&&input7<500000){
+                            total+=(2000*input7);
+                            var li7 = document.createElement('li');
+                            li7.appendChild(document.createTextNode('Створення проекту під ключ озеленення квартир'));
+                            ul.appendChild(li7);
+                            
+                          }
+                         
+                          
+                          
+                            var li = document.createElement('li');
+                            li.appendChild(document.createTextNode('Загальна сума:_____________________________________'+total));
+                             
+                            ul.appendChild(li);
+                                                      
+                          
+                            " id="btn__more">Показати</button>
+
+                            <div class = "hidden" id="show">
+                                <p><b>Обрані послуги:</b></p>
+                                <ul id="list">
+                                   
+                                </ul> 
+                                
+                               
+
+
+                            </div>
+                        </div>
+
+                        
+                        
+                    </section>
+                </div>
+            </div>
+        </div>
+
+ 
+
+    <footer class="footer">
+        <div class="footer__head">
+            <p>Запрошуємо Вас відвідати наші соцмережі:</p>
+        </div>
+        <div class="footer__row-icons">
+            <a class="footer__icon" href="https://www.instagram.com/">
+                <img class="social-icon" src="img/instagram.png" alt="instagram">
+            </a>
+            <a class="footer__icon" href="https://www.facebook.com/">
+                <img class="social-icon" src="img/facebook.png" alt="facebook">
+            </a>
+            <a class="footer__icon" href="https://web.telegram.org/">
+                <img class="social-icon" src="img/telegram.png" alt="telegram">
+            </a>
+        </div>
+        
+    </footer>
+
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+    <div id = "toTop">
+        <img class="up__icon" src="img/arrow-up.png" alt="arrow-up">
+    </div>
+
+</body>
+</html>
